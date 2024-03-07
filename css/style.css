@@ -1,0 +1,74 @@
+:root {
+  --text-putih: #fff;
+  --primary: #154fec;
+  --text-hitam: #000;
+  --logo: #b6895b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--text-putih);
+  color: var(--text-hitam);
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--text-putih);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-putih);
+  font-style: italic;
+}
+.navbar .navbar-logo span {
+  color: var(--logo);
+}
+.navbar .navbar-nav a {
+  color: var(--text-putih);
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--logo);
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--logo);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-extra a {
+  color: var(--text-putih);
+  padding: 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: var(--logo);
+}
+
