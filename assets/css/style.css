@@ -8,8 +8,18 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .mt30 {
     margin-top: 30px;
+}
+
+.fx-ev-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .pd-mid {
@@ -70,6 +80,7 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
+/* Content */
 .content {
     display: flex;
     justify-content: space-between;
@@ -77,4 +88,14 @@ html {
 
 .content img {
     width: 30vw;
+}
+
+.btn-contact {
+    padding: 10pt;
+    width: 150px;
+    background: linear-gradient(to right,#FC4A1A, #F7B733);
+    border: none;
+    border-radius: 10pt;
+    color: white;
+    cursor: pointer;
 }
