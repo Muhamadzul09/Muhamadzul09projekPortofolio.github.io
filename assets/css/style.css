@@ -144,3 +144,14 @@ a {
     font-weight: 500;
     line-height: 2;
 }
+
+/* Content 3 */
+.three-row-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.one-three-width-container {
+    width: 30%;
+    margin-inline: 10pt;
+}
