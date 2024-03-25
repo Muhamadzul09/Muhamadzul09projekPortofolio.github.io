@@ -6,6 +6,7 @@ html {
     margin: 0pt -7pt;
     padding: 0pt;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a {
@@ -47,7 +48,7 @@ a {
     padding: 20pt 0pt;
     background-color: rgb(39, 50, 62);
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     
 }
 
@@ -73,29 +74,7 @@ a {
     font-weight: 700;
 }
 
-.large-title {
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
-}
-
 .text-gradient {
-    background: linear-gradient(to right,#FC4A1A, #F7B733);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.navbar a {
-    margin-inline: 20px;
-    font-size: 12px;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.navbar a:hover {
     background: linear-gradient(to right,#FC4A1A, #F7B733);
     -webkit-background-clip: text;
     background-clip: text;
@@ -106,6 +85,16 @@ a {
 .content {
     display: flex;
     justify-content: space-between;
+}
+
+.large-text {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.small-text {
+    font-size: 18px;
+    line-height: 35px;
 }
 
 .content img {
@@ -120,38 +109,4 @@ a {
     border-radius: 10pt;
     color: white;
     cursor: pointer;
-}
-
-/* Content 2 */
-.profimg-mask {
-    width: 300px;
-    height: 300px;
-    border: 2px solid #F7B733;
-    border-radius: 150px;
-}
-
-.small-orange-circle {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(to right,#FC4A1A, #F7B733);
-    border-radius: 50px;
-    margin-left: 40vw;
-    position: absolute;
-}
-
-.about-me-txt {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 2;
-}
-
-/* Content 3 */
-.three-row-content {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.one-three-width-container {
-    width: 30%;
-    margin-inline: 10pt;
 }
